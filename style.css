@@ -66,10 +66,6 @@ p {
   color: white !important;
   margin: 0 10px;
 }
-.navbar-nav .nav-link.active {
-  border-bottom: 2px solid #ffc107;
-}
-
 .testimonial-card {
   transition: transform 0.3s;
 }
@@ -199,4 +195,36 @@ p {
   color: #fff;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
+}
+.nav-item a:hover {
+  color: #ff6347; /* Change color on hover */
+  transform: scale(1); /* Slightly scale up the link */
+}
+
+/* Hover underline animation */
+.nav-item a::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 2px;
+  background-color: #000000;
+  transition: width 0.3s ease, left 0.3s ease; /* Smooth underline effect */
+  transform: translateX(-20%);
+}
+
+.nav-item:hover{
+  border-bottom: 2px solid #ffc107;
+}
+/* Adding animation to the navbar */
+.navbar {
+  animation: slideIn 1s ease-in-out;
+}
+
+/* Keyframes for navbar slide-in */
+@keyframes slideIn {
+  0% {
+    transform: translateY(-20%);
+  }
 }
