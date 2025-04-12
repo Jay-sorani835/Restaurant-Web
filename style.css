@@ -1,0 +1,202 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.working-hours-section {
+  position: relative;
+  height: 500px;
+  overflow: hidden;
+}
+.working-hours-section img {
+  object-fit: cover;
+  height: 100%;
+  filter: brightness(0.4);
+}
+.working-hours-overlay {
+  top: 0;
+  left: 0;
+  color: white;
+}
+.bg-dark p,
+.bg-dark h2,
+.bg-dark strong {
+  color: #ffffff;
+}
+
+h3 {
+  color: white;
+}
+.text-muted {
+  color: #cccccc !important;
+}
+.btn-warning {
+  background-color: #ffae00;
+  border: none;
+}
+.btn-warning:hover {
+  background-color: #e39600;
+}
+p {
+  color: #dddddd;
+}
+.hero-section {
+  background: url("https://www.chefstore.com/images/imagebank/blog/restaurant-seating.webp")
+    no-repeat center center/cover;
+  height: 100vh;
+  position: relative;
+}
+.hero-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+}
+.hero-section .content {
+  position: relative;
+  z-index: 2;
+}
+.navbar-nav .nav-link {
+  color: white !important;
+  margin: 0 10px;
+}
+.navbar-nav .nav-link.active {
+  border-bottom: 2px solid #ffc107;
+}
+
+.testimonial-card {
+  transition: transform 0.3s;
+}
+.testimonial-card:hover {
+  transform: translateY(-10px);
+}
+.app-promo {
+  background: url("image/Rectangle\ 684.png")
+    no-repeat center center;
+  background-size: cover;
+  padding: 80px 0;
+  filter: brightness(0.95);
+}
+.card-title {
+  font-size: 1.2rem;
+}
+
+.card img {
+  height: 200px;
+  object-fit: cover;
+}
+
+.btn-warning {
+  background-color: #f59e0b;
+  border: none;
+}
+
+.btn-warning:hover {
+  background-color: #e69500;
+}.newsletter-section {
+  background: url('https://source.unsplash.com/1600x400/?cooking,kitchen') no-repeat center center/cover;
+  position: relative;
+}
+
+.newsletter-input {
+  background-color: #123; 
+  color: #fff;
+  border: none;
+}
+
+.newsletter-input::placeholder {
+  color: #ccc;
+}
+
+.footer-section {
+  background-color: #0d1117;
+  background-image: url('./image/Rectangle\ 685.png');
+}
+
+.footer-section a:hover {
+  text-decoration: underline;
+}
+
+.footer-section input {
+  background-color: #1c1f26;
+  border: none;
+  color: white;
+}
+
+.footer-section input::placeholder {
+  color: #aaa;
+}
+.promo-section {
+  background: url('image/Rectangle\ 684.png') no-repeat center center;
+  background-size: cover;
+  padding: 80px 0;
+}
+
+.phone-ui {
+  width: 100%;
+  max-width: 280px;
+  height: 580px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+  overflow: hidden;
+}
+
+.food-card img {
+  width: 100%;
+  height: 80px;
+  object-fit: cover;
+}
+
+.qty-box button {
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+}
+
+.category {
+  background-color: #FFE567;
+  border-radius: 12px;
+  padding: 8px 12px;
+  text-align: center;
+  flex-shrink: 0;
+}
+
+.category img {
+  display: block;
+  margin: 0 auto 5px;
+}
+
+.category small {
+  font-weight: 600;
+  font-size: 12px;
+}
+
+.category.active {
+  border: 2px solid #000;
+  background-color: #000;
+  color: #fff;
+}
+
+.food-card {
+  background-color: #FFE567;
+  min-width: 160px;
+  flex-shrink: 0;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.bottom-nav {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  background-color: #000;
+  color: #fff;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
